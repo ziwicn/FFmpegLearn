@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.ffmpeglib.NativeLib;
 import com.example.jni.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,8 +17,5 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        // Example of a call to a native method
-        TextView tv = binding.sampleText;
     }
 }

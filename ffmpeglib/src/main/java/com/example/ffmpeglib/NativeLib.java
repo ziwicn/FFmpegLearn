@@ -4,7 +4,6 @@ public class NativeLib {
 
     // Used to load the 'ffmpeglib' library on application startup.
     static {
-        System.loadLibrary("avcodec");
         System.loadLibrary("ffmpeglib");
     }
 
