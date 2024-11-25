@@ -17,5 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        NativeLib nativeLib = new NativeLib();
+        nativeLib.stringFromJNI();
     }
 }
